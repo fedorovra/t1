@@ -32,6 +32,7 @@ _sites = ['https://vk.com',
           'https://youtube.com', 
           'https://google.com']
 _sites = ['https://ya.ru']
+#_sites = ['https://vk.com']
 _counter = 1
 
 for _line in _file:

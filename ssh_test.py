@@ -8,20 +8,20 @@ YELLOW = '\033[93m'
 BLUE = '\033[94m'
 END = '\033[0m'
 
-ssh = ( { 'session' : 's1',  'server' : '94.242.54.121',   'color' : GREEN  },
-        { 'session' : 's2',  'server' : '94.242.54.128',   'color' : YELLOW },
-        { 'session' : 's3',  'server' : '94.242.62.22',    'color' : GREEN  },
-        { 'session' : 's4',  'server' : '45.33.87.204',    'color' : YELLOW },
-        { 'session' : 's5',  'server' : '194.63.143.144',  'color' : GREEN  },
-        { 'session' : 's6',  'server' : '217.106.239.118', 'color' : YELLOW },
-        { 'session' : 's7',  'server' : '5.8.8.201',       'color' : GREEN  },
-        { 'session' : 's8',  'server' : '5.8.8.10',        'color' : YELLOW },
-        { 'session' : 's9',  'server' : '5.8.8.19',        'color' : GREEN  },
-        { 'session' : 's10', 'server' : '109.248.250.127', 'color' : YELLOW },
-        { 'session' : 's11', 'server' : '93.170.131.243',  'color' : GREEN  }, 
-        { 'session' : 's12', 'server' : '94.242.59.52',    'color' : YELLOW },
-        { 'session' : 's13', 'server' : '94.242.57.185',   'color' : GREEN  },
-        { 'session' : 's14', 'server' : '217.29.53.110',   'color' : YELLOW })
+ssh = ( { 'session' : 's1',  'server' : '94.242.54.121',   'color' : GREEN,  'id' : '33' },
+        { 'session' : 's2',  'server' : '94.242.54.128',   'color' : YELLOW, 'id' : '34' },
+        { 'session' : 's3',  'server' : '94.242.62.22',    'color' : GREEN,  'id' : '37' },
+        { 'session' : 's4',  'server' : '45.33.87.204',    'color' : YELLOW, 'id' : '36' },
+        { 'session' : 's5',  'server' : '194.63.143.144',  'color' : GREEN,  'id' : '4'  },
+        { 'session' : 's6',  'server' : '217.106.239.118', 'color' : YELLOW, 'id' : '9'  },
+        { 'session' : 's7',  'server' : '5.8.8.201',       'color' : GREEN,  'id' : '6'  },
+        { 'session' : 's8',  'server' : '5.8.8.10',        'color' : YELLOW, 'id' : '15' },
+        { 'session' : 's9',  'server' : '5.8.8.19',        'color' : GREEN,  'id' : '17' },
+        { 'session' : 's10', 'server' : '109.248.250.127', 'color' : YELLOW, 'id' : '20' },
+        { 'session' : 's11', 'server' : '93.170.131.243',  'color' : GREEN,  'id' : '21' }, 
+        { 'session' : 's12', 'server' : '94.242.59.52',    'color' : YELLOW, 'id' : '5'  },
+        { 'session' : 's13', 'server' : '94.242.57.185',   'color' : GREEN,  'id' : '6'  },
+        { 'session' : 's14', 'server' : '217.29.53.110',   'color' : YELLOW, 'id' : '25' })
 
 for key in ssh:
   key['session'] = paramiko.SSHClient()
